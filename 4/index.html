@@ -10,7 +10,15 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <img class="logo" src="#" alt="Логотип Седона" />
+            <a class="logo"
+              ><!--внес изменения в логотип, добавил ссылку на главную страницу-->
+              <img
+                class="logo"
+                href="index.html"
+                src="#"
+                alt="Логотип Седона"
+              />
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -47,13 +55,14 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advatages-list">
-          <li class="advatages-item">
+          <div class="advatages-item">
+            <!--убрал блок с картинкой из списка-->
             <h3 class="advanages-title">Настоящий городок</h3>
             <p class="advantures-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img class="foto-1" src="#" alt="фото города Седона" />
-          </li>
+          </div>
           <li class="advatages-item">
             <h3 class="advanages-title">Небольшая площадь</h3>
             <p class="advantures-description">
@@ -72,41 +81,44 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item">
+          <div class="advantages-item">
+            <!--убрал блок с картинкой из списка-->
             <img class="foto-2" src="#" alt="Фото моста дьявола" />
             <h3 class="advanages-title">Там есть мост дьявола</h3>
             <p class="advantures-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-          </li>
+          </div>
         </ul>
       </section>
-      <section class="Frame 40">
-        <ul class="frame-list">
-          <li class="frame-item">
+      <section class="Container">
+        <!--изменил название-->
+        <ul class="Container-list">
+          <li class="Container-item">
             <img class="Advantage-icon" src="#" alt="Логотип Жилья" />
-            <h3 class="frame-title">Жильё</h3>
+            <h3 class="Container-title">Жильё</h3>
             <p class="frame-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="frame-item">
+          <li class="Container-item">
             <img class="Advantage-icon" src="#" alt="Логотип Еды" />
-            <h3 class="frame-title">Еда</h3>
-            <p class="frame-description">
+            <h3 class="Container-title">Еда</h3>
+            <p class="Container-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="frame-item">
+          <li class="Container-item">
             <img class="Advantage-icon" src="#" alt="Логотип Сувениров" />
-            <h3 class="frame-title">Сувениры</h3>
-            <p class="frame-description">
+            <h3 class="Container-title">Сувениры</h3>
+            <p class="Container-description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
         </ul>
       </section>
-      <section class="Frame-32">
+      <section class="wrapper">
+        <!--изменил название-->
         <h3>Заинтересовались?</h3>
         <p>
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие
@@ -119,16 +131,11 @@
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <label>
-          <input
-            type="text"
-            name="email"
-            id=""
-            method="get"
-            placeholder="Ваш e-mail"
-          />
-          <input type="submit" value="Подписаться" />
-        </label>
+        <!--не понимаю что указать в атрибуте action?-->
+        <form action="#">
+          <input type="text" name="email" placeholder="Ваш e-mail" />
+          <input type="submit" value="Отправить" />
+        </form>
       </section>
       <footer class="pege-footer">
         <section class="footer-social">
